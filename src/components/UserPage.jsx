@@ -270,10 +270,8 @@ const UserPage = () => {
     }
   };
 
-  // console.log(userData)
   const handleOnChange = (e) => {
     e.preventDefault();
-    // console.log(e.target)
     if (addErrorHandler === 'block') {
       setAddErrorHandler('hidden')
     }
@@ -716,61 +714,6 @@ const UserPage = () => {
               <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
             </>
           ) : null}
-          {/* <motion.div initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            className={isModalOpen + " fixed inset-0 p-4 flex flex-wrap justify-center items-center w-full h-full z-[1000] before:fixed before:inset-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)] overflow-auto font-[sans-serif]"}>
-            <div className="w-full max-w-lg bg-white shadow-lg rounded-md p-6 relative">
-              <div className="flex items-center pb-3 border-b text-black">
-                <h3 className="text-xl font-bold flex-1">Add User</h3>
-                <motion.svg whileTap={{ scale: 0.5 }} whileHover={{ scale: 1.3 }} onClick={handleAddModalClose} xmlns="http://www.w3.org/2000/svg" className="w-3.5 ml-2 cursor-pointer shrink-0 fill-black hover:fill-red-500"
-                  viewBox="0 0 320.591 320.591">
-                  <path
-                    d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-                    data-original="#000000"></path>
-                  <path
-                    d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                    data-original="#000000"></path>
-                </motion.svg>
-              </div>
-              <div className="m-10">
-                <form onSubmit={handleAddUser} className="space-y-6 px-4 max-w-sm mx-auto font-[sans-serif]">
-                  <div className={`${addErrorHandler} mt-2 bg-red-100 text-red-800 w-[360px] p-4 rounded-md relative`} role="alert">
-                    <strong className="font-bold text-base">User Add Failed!</strong>
-                    <span className="block text-sm sm:inline max-sm:mt-1 max-sm:ml-0 mx-4">User name already exist.</span>
-                  </div>
-                  <div className="flex items-center">
-                    <label className="text-gray-400 w-36 text-sm">User :</label>
-                    <input
-                      type="text"
-                      // id="username"
-                      name="username"
-                      placeholder="Enter users name"
-                      value={username}
-                      required
-                      autoComplete='off'
-                      onChange={handleOnChange}
-                      className={`px-2 py-2 w-full border-b-2 ${addErrorHandler === 'hidden' ? 'border-slate-700 focus:border-slate-700' : 'border-red-400 focus:border-red-400'}  outline-none text-sm bg-white`} />
-                  </div>
-                  <p className={addErrorHandler + ' text-xs flex flex-row-reverse text-red-400 p-0 m-0'}>User Name Already Exist</p>
-                  <div className="flex items-center">
-                    <label className="text-gray-400 w-36 text-sm">Address :</label>
-                    <input
-                      type="text"
-                      // id="useraddress"
-                      name="useraddress"
-                      placeholder="Enter users address"
-                      value={useraddress}
-                      required
-                      autoComplete='off'
-                      onChange={handleOnChange}
-                      className="px-2 py-2 w-full border-b-2 focus:border-slate-700 outline-none text-sm bg-white" />
-                  </div>
-                  <motion.button whileTap={{ scale: 0.5 }} whileHover={{ scale: 1.1 }} type="submit"
-                    className="rounded-md px-6 py-2 w-full bg-slate-700 text-sm text-white hover:bg-slate-400 mx-auto block">Submit</motion.button>
-                </form>
-              </div>
-            </div>
-          </motion.div> */}
           <motion.div initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             className={isUserModalOpen + " fixed inset-0 p-4 flex flex-wrap justify-center items-center w-full h-full z-[1000] before:fixed before:inset-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)] overflow-auto font-[sans-serif]"}>
